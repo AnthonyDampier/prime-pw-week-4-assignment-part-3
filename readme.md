@@ -52,14 +52,14 @@ __Using functions in other functions!__
   - return `false` if the basket contains *less* than max number of items
   - return `true` otherwise (equal or more than maxItems)
 
-3. Update the required `addItem` function to:
+√3. Update the required `addItem` function to:
   - Use the `isFull` function to prevent more than `maxItems` from being added to the basket. 
   - If an item was added to the array, return `true`
   - If there was no room and the item could not be added return `false`
 
 __Using Array built-in functions!__
 
-4. Create a function called `removeItem`. It should:
+√4. Create a function called `removeItem`. It should:
   - Take an input parameter for a string `item`
   - Use [Array.indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) to find the index of the first matching item in the basket.
   - Use [Array.splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) to remove the first matching item from the basket.

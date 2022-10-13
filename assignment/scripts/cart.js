@@ -14,7 +14,7 @@ function addItem(item){
         //console.log('Item has been add!');
         return true;
     }
-    console.log('item not added');
+    console.log('Item not added. Max Capacity.');
     return false
 }
 
@@ -51,8 +51,13 @@ function isFull(){
     }
 }
 
-
-
+function removeItem(item){
+    if (basket.includes(item)){
+        basket.splice(basket.indexOf(item), 1);
+        return 'Item removed';
+    }
+    return 'null';
+}
 
 //Final testing
 listItems();
@@ -73,3 +78,7 @@ addItem('Apple5');
 addItem('Apple6');
 console.log('^^ Expect last console to be: item not added');
 console.log('Basket is full (expect true):', isFull());
+
+console.log(removeItem('Apple3',basket));
+console.log("Returns null:",removeItem('Pineapple',basket));
+
